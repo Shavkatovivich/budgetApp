@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>BudgetApp</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="budget__numbers">
+            <div class="number" id="earned">
+                <small>Topilgan pul</small>
+                <div class="amount__container">
+                    <p id="earned__symbol">$</p>
+                    <span class="amount__earned"></span>
+                </div>
+            </div>
+            <div class="number" id="available">
+                <small>Mavjud pullar</small>
+                <div class="amount__container">
+                    <p>$</p>
+                    <span class="amount__available"></span>
+                </div>
+            </div>
+            <div class="number" id="spent">
+                <small>Sarflanadigan pullar</small>
+                <div class="amount__container">
+                    <p class="spent__aymbol">$</p>
+                    <span class="amount__spent"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="input__area">
+            <input type="text" id="description" placeholder="Tavsif">
+            <input type="number" id="amount" placeholder="Miqdor">
+        </div>
+
+        <div class="buttons__container">
+            <button id="add__income">Daromad qo'shish</button>
+            <button id="add__expense">Xarajatlarni qo'shish</button>
+        </div>
+
+        <div class="items__container">
+            <div class="container" id="income__container">
+                <h2>Daromad</h2>
+<!-- 
+                <div class="item income">
+                    <h4 class="">Stuff sold</h4>
+                    <div class="item__income">
+                        <p class="symbol">$</p>
+                        <span class="income__amount">200</span>
+                    </div>
+                    <i class="far fa-trash-alt"></i>
+                </div> -->
+            </div>
+
+            <div class="container" id="expenses__container">
+                <h2>Xarajatlar</h2>
+
+                <!-- <div class="item expense">
+                    <h4>Stuff bought</h4>
+                    <div class="item__expense">
+                        <p class="symbol">$</p>
+                        <span class="expense__amount">200</span>
+                    </div>
+                    <i class="far fa-trash-alt"></i>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
